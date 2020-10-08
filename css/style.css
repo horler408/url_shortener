@@ -9,6 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  background-color: hsl(0, 8%, 95%);
 }
 
 li {
@@ -21,14 +22,150 @@ li {
 }
 
 .head__container {
+  width: 100%;
+  min-height: 70vh;
   background: #fff;
-  padding: 10px 30px;
+  padding: 10px 0 0 100px;
 }
 
-.head__text {
+/* Nav section */
+nav {
+  position: relative;
+  min-height: 10vh;
+}
+
+.head__title {
+  position: absolute;
+}
+
+.head__items {
+  position: absolute;
+  width: 50%;
+  margin: 20px;
+  top: -20px;
+  left: 10%;
+}
+
+.head__list {
+  font-size: 14px;
   display: inline-block;
 }
 
-.head_items {
-  display: inline-block;
+.head__buttons {
+  position: absolute;
+  right: 100px;
+}
+.head__buttons button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: hsl(180, 66%, 49%);
+}
+
+/* Hero section */
+.hero__brand {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.brand__text {
+  width: 60%;
+  margin-top: 50px;
+}
+.brand__title {
+  font-size: 3rem;
+}
+.brand__paragraph {
+  text-align: left;
+  width: 75%;
+  font-size: 0.8rem;
+}
+.brand__button {
+  margin: 10px;
+}
+.brand__button button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: hsl(180, 66%, 49%);
+}
+
+.brand__image {
+  width: 50%;
+}
+.brand__image img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Hanging Form */
+.url_form {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 10vh;
+  padding: 20px;
+  justify-content: center;
+  background: purple;
+}
+.shorten-form {
+  width: 100%;
+  height: 30px;
+}
+.shorten-form input {
+  height: 100%;
+  width: 80%;
+  border-radius: 5px;
+  background: #fff;
+  outline: none;
+  border: none;
+}
+.shorten-form button {
+  height: 100%;
+  width: 15%;
+  margin: 0 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: hsl(180, 66%, 49%);
+}
+
+/* Main Section */
+.main {
+  position: relative;
+  min-height: 70vh;
+  text-align: center;
+  padding-top: 100px;
+}
+.main__title {
+  font-size: 0.8rem;
+}
+.main__paragraph {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 0.6rem;
+}
+.main__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card__items {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  min-height: 30vh;
+  margin: 10px;
+  background: #fff;
+}
+.card__items:nth-child(2) {
+  margin-top: 10px;
 }
