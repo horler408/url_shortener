@@ -23,9 +23,9 @@ li {
 
 .head__container {
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
   background: #fff;
-  padding: 10px 0 0 100px;
+  padding: 20px;
 }
 
 /* Nav section */
@@ -40,6 +40,7 @@ nav {
 
 .head__items {
   position: absolute;
+  display: none;
   width: 50%;
   margin: 20px;
   top: -20px;
@@ -53,6 +54,7 @@ nav {
 
 .head__buttons {
   position: absolute;
+  display: none;
   right: 100px;
 }
 .head__buttons button {
@@ -72,16 +74,20 @@ nav {
 }
 
 .brand__text {
-  width: 60%;
-  margin-top: 50px;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  margin-top: 20px;
 }
 .brand__title {
-  font-size: 3rem;
+  font-size: 2.3rem;
+  width: 100%;
+  text-align: center;
 }
 .brand__paragraph {
-  text-align: left;
-  width: 75%;
-  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+  font-size: 0.6rem;
 }
 .brand__button {
   margin: 10px;
@@ -94,7 +100,9 @@ nav {
 }
 
 .brand__image {
-  width: 50%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .brand__image img {
   height: 100%;
@@ -104,31 +112,31 @@ nav {
 /* Hanging Form */
 .url_form {
   position: absolute;
-  top: 65%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  height: 10vh;
+  width: 90%;
+  height: 20vh;
   padding: 20px;
-  justify-content: center;
-  background: purple;
+  background: url("../assets/bg-shorten-desktop.svg") center/cover no-repeat;
+  background-color: hsl(257, 27%, 26%);
 }
 .shorten-form {
   width: 100%;
-  height: 30px;
+  height: 90%;
 }
 .shorten-form input {
-  height: 100%;
-  width: 80%;
+  height: 50%;
+  width: 100%;
   border-radius: 5px;
   background: #fff;
   outline: none;
   border: none;
 }
 .shorten-form button {
-  height: 100%;
-  width: 15%;
-  margin: 0 10px;
+  height: 40%;
+  width: 100%;
+  margin: 15px 0;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -146,29 +154,131 @@ nav {
   font-size: 0.8rem;
 }
 .main__paragraph {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   font-size: 0.6rem;
 }
 .main__cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 30%;
+  transform: translateX(-30%);
   flex-wrap: wrap;
+  width: 90%;
   margin-top: 50px;
 }
 
 .card__items {
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 100%;
   min-height: 30vh;
   margin: 10px;
+  padding: 10px 20px 10px 20px;
   background: #fff;
 }
 .card__items:nth-child(2) {
   margin-top: 10px;
 }
 
+.footer {
+}
+.footer__top {
+  background: url("../assets/bg-boost-desktop.svg") center/cover no-repeat;
+  background-color: hsl(257, 27%, 26%);
+  min-height: 20vh;
+}
+.footer__bottom {
+  background: hsl(260, 8%, 14%);
+  min-height: 50vh;
+}
+
 @media only screen and (min-width: 420px) {
+  .head__container {
+    min-height: 70vh;
+    padding: 10px 0 0 100px;
+  }
+  nav {
+  }
+  .head__items {
+    display: block;
+  }
+  .head__buttons {
+    display: block;
+  }
+  .brand__text {
+    width: 90%;
+    text-align: justify;
+  }
+  .brand__paragraph {
+    text-align: left;
+    width: 75%;
+    font-size: 0.8rem;
+  }
+  .brand__image {
+    position: relative;
+    width: 30%;
+  }
+  .brand__text {
+    position: relative;
+    top: 0;
+    width: 60%;
+    margin-top: 50px;
+  }
+  .brand__title {
+    text-align: left;
+    font-size: 3rem;
+  }
+  .brand__image {
+    width: 50%;
+  }
+
+  .url_form {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10vh;
+    padding: 20px;
+    justify-content: center;
+    background: hsl(257, 27%, 26%);
+  }
+  .shorten-form {
+    width: 100%;
+    height: 30px;
+  }
+  .shorten-form input {
+    width: 80%;
+    height: 100%;
+  }
+  .shorten-form button {
+    width: 15%;
+    height: 100%;
+    margin: 0 10px;
+  }
+  .main__paragraph {
+    width: 50%;
+  }
+  .main__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    transform: translateX(0);
+    width: 100%;
+  }
+  .card__items {
+    width: 25%;
+    margin: 10px;
+  }
+
+  .footer {
+    min-height: 50vh;
+  }
+  .footer__top {
+    min-height: 20vh;
+  }
+  .footer__bottom {
+    min-height: 30vh;
+  }
 }
