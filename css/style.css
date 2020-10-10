@@ -239,14 +239,19 @@ hr {
   outline: none;
   border: none;
 }
+.shorten-form input.error {
+  border: 1px solid hsl(0, 87%, 67%);
+}
 .shorten-form button {
   height: 40%;
   width: 100%;
   font-size: 1.2rem;
   color: #fff;
-  margin: 15px 0;
+  margin: 20px 0;
   outline: none;
   border: none;
+  pointer-events: all;
+  cursor: pointer;
   border-radius: 5px;
   background: hsl(180, 66%, 49%);
 }
@@ -257,6 +262,7 @@ hr {
   min-height: 70vh;
   text-align: center;
   padding-top: 100px;
+  pointer-events: none;
 }
 .main__title {
   font-size: 1.2rem;
@@ -365,7 +371,13 @@ hr {
   transition: all 0.3s linear;
 }
 
-/* Error  hsl(0, 87%, 67%)*/
+.error-message {
+  position: absolute;
+  top: 60px;
+  color: hsl(0, 87%, 67%);
+  font-size: 10px;
+  text-align: center;
+}
 
 @media only screen and (min-width: 420px) {
   .head__container {
@@ -479,6 +491,7 @@ hr {
   .footer__bottom {
     position: relative;
     min-height: 30vh;
+    text-align: left;
   }
   .footer__bottom--left {
     position: absolute;
