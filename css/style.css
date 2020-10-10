@@ -159,7 +159,6 @@ hr {
   border-radius: 20px;
   margin-bottom: 20px;
   background: transparent;
-  /* background: hsl(180, 66%, 49%); */
 }
 .form__buttons button.active {
   background: hsl(180, 66%, 49%);
@@ -218,7 +217,7 @@ hr {
 /* Hanging Form */
 .url_form {
   position: absolute;
-  top: 90%;
+  top: 95%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
