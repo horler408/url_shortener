@@ -10,7 +10,7 @@ const form = document.querySelector('.url_form')
 
 
 
-const url = `https://rel.ink/api/links/Nn8y9p/`;
+//const url = `https://rel.ink/api/links/Nn8y9p/`;
 //POSTurl = "url": "https://news.ycombinator.com/"
 
 sideToggle.addEventListener('click', () => {
@@ -22,7 +22,8 @@ closeBtn.addEventListener('click', () => {
 })
 
 
-const getRequest = async () => {
+const getRequest = async (link) => {
+  const url = `https://rel.ink/api/${link}/Nn8y9p/`;
   const response = await fetch(url);
   const data = await response.json();
   console.log(data);
@@ -38,8 +39,8 @@ form.addEventListener('submit', (e) => {
     errorMsg.textContent = '';
     input.classList.remove('error');
 
-    console.log(input.value);
-    getRequest();
+    //console.log(input.value);
+    getRequest(input.value);
 
     input.value = '';
   }
