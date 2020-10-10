@@ -12,6 +12,9 @@ body {
   background-color: hsl(0, 8%, 95%);
 }
 
+ul {
+  text-decoration: none;
+}
 li {
   list-style: none;
 }
@@ -45,6 +48,32 @@ nav {
   margin: 20px;
   top: -20px;
   left: 10%;
+}
+
+/* .sidebar__toggle {
+  position: fixed;
+  font-size: 2rem;
+  right: 10px;
+  background: transparent;
+  border-color: transparent;
+  color: grey;
+  transition: var(--transition);
+  cursor: pointer;
+} */
+
+.head__sidebar-toggle {
+  position: fixed;
+  display: block;
+  font-size: 1.5rem;
+  color: grey;
+  border: none;
+  right: 10px;
+  cursor: pointer;
+}
+
+.aside {
+  position: absolute;
+  display: none;
 }
 
 .head__list {
@@ -244,8 +273,32 @@ nav {
   background: hsl(180, 66%, 49%);
 }
 .footer__bottom {
+  padding: 20px;
+  color: #fff;
   background: hsl(260, 8%, 14%);
   min-height: 50vh;
+  text-align: center;
+}
+.footer__bottom--title {
+  margin-bottom: 30px;
+}
+.footer__bottom--head {
+  margin-bottom: 10px;
+}
+.footer__bottom--items p {
+  font-weight: lighter;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  color: #ffffff;
+  transition: all 0.3s linear;
 }
 
 /* Error  hsl(0, 87%, 67%)*/
@@ -255,7 +308,8 @@ nav {
     min-height: 80vh;
     padding: 10px 0 0 130px;
   }
-  nav {
+  .head__sidebar-toggle {
+    display: none;
   }
   .head__items {
     display: block;
@@ -344,7 +398,7 @@ nav {
     position: absolute;
     height: 60px;
     width: 60px;
-    top: -20px;
+    top: -30px;
     left: 20px;
     padding: 10px 5px;
     text-align: center;
@@ -359,6 +413,26 @@ nav {
     min-height: 20vh;
   }
   .footer__bottom {
+    position: relative;
     min-height: 30vh;
+  }
+  .footer__bottom--left {
+    position: absolute;
+    left: 100px;
+    width: 40%;
+  }
+  .footer__bottom--right {
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    right: 50px;
+    width: 60%;
+    margin: 0 20px;
+  }
+  .footer__bottom--items p {
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
   }
 }

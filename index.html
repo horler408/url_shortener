@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>URL Shortening API</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- font-awesome-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -20,7 +25,28 @@
             <button type="button" class="login">Login</button>
             <button type="button" class="signup active">Sign up</button>
           </div>
+          <div class="sidebar__toggle">
+            <button class="head__sidebar-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
         </nav>
+
+        <aside class="aside">
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="head__items">
+            <li class="head__list">Features</li>
+            <li class="head__list">Pricing</li>
+            <li class="head__list">Resources</li>
+          </ul>
+          <div class="head__buttons">
+            <button type="button" class="login">Login</button>
+            <button type="button" class="signup active">Sign up</button>
+          </div>
+        </aside>
+
         <div class="hero__brand">
           <div class="brand__text">
             <h2 class="brand__title">More than just shorter links</h2>
@@ -128,10 +154,54 @@
             <h3 class="footer__bottom--title">Shortly</h3>
           </div>
           <div class="footer__bottom--right">
-            <div class="footer__bottom--items">Features</div>
-            <div class="footer__bottom--items">Features</div>
-            <div class="footer__bottom--items">Company</div>
-            <div class="footer__bottom--items"></div>
+            <div class="footer__bottom--items">
+              <h4 class="footer__bottom--head">Features</h4>
+              <p>Monitoring</p>
+              <p>Broadcasts</p>
+              <p>Analysis</p>
+            </div>
+            <div class="footer__bottom--items">
+              <h4 class="footer__bottom--head">Features</h4>
+              <p>Bing</p>
+              <p>Developers</p>
+              <p>Bloggers</p>
+            </div>
+            <div class="footer__bottom--items">
+              <h4 class="footer__bottom--head">Company</h4>
+              <p>About</p>
+              <p>Our Mission</p>
+              <p>Owners</p>
+              <p>Content</p>
+            </div>
+            <div class="footer__bottom--items">
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.facebook.com/nloengr">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://codepen.io.com/">
+                    <i class="fab fa-codepen"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/abdulazeez-yusuf-6b4419a6/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </section>
