@@ -55,12 +55,12 @@ const getRequest = async (link) => {
   console.log(data);
 };
 
-const regex = 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)'
-const urlMatch = input.value.match(regex)
+var expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+var regex = new RegExp(expression);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-  if(input.value === '' && !urlMatch) {
+  if(input.value === '' && input.value.match(regex) === false) {
     errorMsg.textContent = '*Please enter a valid url e.g https://www.google.com';
     input.classList.add('error');
     return

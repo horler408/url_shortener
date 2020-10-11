@@ -217,7 +217,7 @@ hr {
 /* Hanging Form */
 .url_form {
   position: absolute;
-  top: 95%;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -231,7 +231,7 @@ hr {
   height: 90%;
 }
 .shorten-form input {
-  height: 50%;
+  min-height: 50%;
   width: 100%;
   font-size: 1.2rem;
   border-radius: 5px;
@@ -301,7 +301,7 @@ hr {
   position: relative;
   min-height: 70vh;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 150px;
   pointer-events: none;
 }
 .main__title {
@@ -491,7 +491,7 @@ hr {
   }
   .shorten-form input {
     width: 80%;
-    height: 100%;
+    min-height: 100%;
     font-size: 1.5rem;
   }
   .shorten-form button {
@@ -578,7 +578,7 @@ hr {
 
   .footer {
     min-height: 50vh;
-    top: 50px;
+    top: 120px;
   }
   .footer__top {
     min-height: 20vh;
