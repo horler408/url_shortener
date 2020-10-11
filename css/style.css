@@ -243,7 +243,7 @@ hr {
   border: 1px solid hsl(0, 87%, 67%);
 }
 .shorten-form button {
-  height: 40%;
+  min-height: 50%;
   width: 100%;
   font-size: 1.2rem;
   color: #fff;
