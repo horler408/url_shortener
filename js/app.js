@@ -60,11 +60,7 @@ var regex = new RegExp(expression);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-  if(input.value === '' && input.value.match(regex) === false) {
-    errorMsg.textContent = '*Please enter a valid url e.g https://www.google.com';
-    input.classList.add('error');
-    return
-  }else {
+  if(input.value !== '' && input.value.match(regex)) {
     errorMsg.textContent = '';
     input.classList.remove('error');
 
@@ -72,6 +68,11 @@ form.addEventListener('submit', (e) => {
     createResult()
 
     input.value = '';
+    
+  }else {
+    errorMsg.textContent = '*Please enter a valid url e.g https://www.google.com';
+    input.classList.add('error');
+    return
   }
 
   

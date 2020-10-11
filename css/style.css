@@ -430,8 +430,8 @@ hr {
   position: absolute;
   top: 60px;
   color: hsl(0, 87%, 67%);
-  font-size: 10px;
-  text-align: center;
+  font-size: 0.5rem;
+  width: 100%;
 }
 
 @media only screen and (min-width: 420px) {
