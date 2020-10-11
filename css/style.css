@@ -271,7 +271,7 @@ hr {
 }
 .copy_button {
   position: relative;
-  height: 30px;
+  height: 100%;
   width: 100px;
   color: #fff;
   font-size: 1rem;
@@ -290,7 +290,7 @@ hr {
   margin: 10px 0;
 }
 .right_url {
-  display: block;
+  margin: 0 30px;
 }
 .right_url a {
   color: hsl(180, 66%, 49%);
@@ -328,7 +328,6 @@ hr {
   width: 100%;
   min-height: 30vh;
   padding: 10px 20px;
-  /* margin: 10px 0; */
   background: #fff;
 }
 
@@ -548,6 +547,12 @@ hr {
     width: 25%;
     margin: 0;
     text-align: left;
+  }
+  .skew {
+    top: 30px;
+  }
+  .skew_more {
+    top: 60px;
   }
   .card__text {
     position: absolute;
