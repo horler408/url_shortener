@@ -217,7 +217,7 @@ hr {
 /* Hanging Form */
 .url_form {
   position: absolute;
-  top: 100%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -434,6 +434,11 @@ hr {
   width: 100%;
 }
 
+@media only screen and (min-width: 760px) {
+  .url_form {
+    top: 100vh;
+  }
+}
 @media only screen and (min-width: 420px) {
   .head__container {
     min-height: 80vh;
